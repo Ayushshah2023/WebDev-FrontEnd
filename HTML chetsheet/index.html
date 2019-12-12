@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ayush's First HTML Page</title>
+</head>
+<a href="htmlsemantics.html">Go to my blog on web dev</a>
+<hr>
+<body>
+	<!-- This is for headings-->
+<h1>About US</h1>
+<h2>This is H2</h2>
+<h3>This is H3</h3>
+<h4>This is H4</h4>
+<h5>This is H5</h5>
+<h6>This is h6</h6>
+<!-- This is for paragraph-->
+<p>This is a syntax for paragraph</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt <strong>ut labore et dolore magna</strong> aliqua. Ut enim ad minim veniam,
+quis nostrud <em>exercitation ullamco laboris</em> nisi ut aliquip ex ea commodo
+consequat. <a href="http://www.google.com" target="_blank">Duis aute irure dolor</a> in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</body>
+</html>
+
+
+<!-- Inline and Block level elements:
+Inline ELements dont start a new line, they take the necessary width
+Block Level They start on a new line and take the full width that is available-->
+
+
+
+<!-- You can use lorem to genrate auto text to check a program!-->
+<!-- You can use strong tag to make certain selected Part of text as strong , now basic strong says that you should bold it , but you can edit it with CSS-->
+<!-- You can use em tag to make certain selected Part of text as emphasised , now basic em says that you should italicise it , but you can edit it with CSS-->
+<!-- Hyperlink tag this can help you relocate fro one bake of your website to another or from your website to another
+The href attribute will be used add the location of the hyperlink, use filename.html for your files or websitename for external source
+The target attribute will be used if you want to open the page on the next window
+_blank-> Next page (Use this for External websites)
+nothing ->Same page(Use this for webpages of your own)
+-->
+
+<!-- USER AGENT STYLESHEET is the default Stylesheet added to the HTML Page-->
+
+<!-- LISTS:
+	There are two types of list:
+	|
+	|->	Ordered List ( default bullet: point ) 
+	|->	Unordered List( default bullet: number )
+-->
+
+<ul><!-- USED for Navigation bar-->
+	<li>This is Item 1</li>
+	<li>This is Item 2</li>
+	<li>This is Item 3</li>
+	<li>This is Item 4</li>
+</ul>
+<ol>
+	<li>This is Item 1</li>
+	<li>This is Item 2</li>
+	<li>This is Item 3</li>
+	<li>This is Item 4</li>
+</ol>
+
+<!-- TABLE-->
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Email ID</th>
+			<th>Age</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Ayush</td>
+			<td>avengers1999@gmail.com</td> <!-- TASK add hyperlink such that you click on it and it will go to your gamil and add this add as recepient-->
+			<td>19</td>
+		<tr>
+			<td>Tanush</td>
+			<td>tanushshah1409@gmail.com</td> <!-- TASK add hyperlink such that you click on it and it will go to your gamil and add this add as recepient-->
+			<td>15</td>
+		</tr>
+		<tr>
+			<td>Vaishali</td>
+			<td>vaishali.shah14@gmail.com</td> <!-- TASK add hyperlink such that you click on it and it will go to your gamil and add this add as recepient-->
+			<td>43</td>
+		</tr>
+		</tr>
+	</tbody>
+</table>
+
+
+<!-- FORMS--
+action attribute this will redirect the form to this PHP or JS page
+method- two methods post -> it will pput he data intot he database 
+get-> it will put the data onto the URL thus useful for Search operations>
+Along with i=this we have
+label for input it will be shown As name
+input will be the next tag with type to indicate data type and name will be used when we habe to extract data from PHP
+if we add cost then it will go to the cost row in the database
+-->
+<br>
+<hr><!-- This will but a line to divide the pagr horrizontally width and everything can be changed in CSS-->
+<br>
+<form action="bizcard2.html" method="POST">
+	<div>
+		<label> First Name</label>
+	<input type="text" name="first-name" placeholder="naam daalo">
+	</div>
+	<br>
+	<div>
+		<label> Last Name</label>
+		<input type="text" name="last-name"><!-- use camel case if you want to-->
+	</div>
+	<br>
+	<div>
+		<label>Email</label>
+		<input type="Email" name="emailid"><!-- use camel case if you want to-->
+	</div>
+	<br>
+	<div>
+		<label>Message</label>
+		<textarea name="message"></textarea>
+	</div>
+	<br>
+	<div>
+		<label> Gender</label>
+		<select name="Gender">
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="others">Others</option>
+		</select>
+	</div>
+	<br>
+	<div>
+		<label>Age</label>
+		<input type="number" name="age">
+	</div><!-- Value can be added as an attribute in order to give some default value-->
+	<!-- There is a differenet attribute called place Holder as well, and there difference between them is as clearas their name suggests :-) 
+		Placeholder will be default value but it will vanish when you click on it-->
+		<br>
+	<div>
+		<label>Birthday</label>
+		<input type="Date" name="birthday">
+	</div>
+	<br>
+	<!-- LABELS-->
+	<input type="submit" name="submit" value="SUBMIT">
+	<p>Radio buttons Drop box checkbox Labels are left</p>
+</form>
+<!-- BUTTONS-->
+<button>Click me but i wont do anything ( Similar to BJP)</button>
+ <!-- IMAGE-->
+ <div>
+ 	<br>
+ 	<a href="https://www.skysports.com/liverpool-fixtures" target="_blank">
+ 		<img src="Liverpool-Montage.jpg" alt="Liverpool city center" width="250">
+ 	</a>
+ </div>
+ <!--if nothing is written then it is considered as pixels and height is auto scaled, if you enter height then it will adjust to that given height-->
+ <!-- Only this much info works cause it is in same folder as of the html page, else add the whole address of the image.
+ 	example if it is in images folder then images/Liverpool-Montage.jpg is to be used-->
+ 	<!-- you can add the width and height of the image from here but i will not suggest you to do so cause CSS ka upyog(use in english) kab karoge !-->
+ 	<!-- We can add hyperlink tot he image so that it can open to something good-->
+
+
+
+
+ 	<!--Quotations
+ 	block quote,-abbreviate and cite-->
+<blockquote cite="https://www.google.com">Lorem ayee CAptaion</blockquote>
+
+<p>The <abbr title="Liverpool football club"> LFC</abbr> stands between itself and its 18th <abbr title="Premier league or british first division">title</abbr></p>  
+
+<p>This is a <cite>basic</cite> HTML course !!</p>
+
+<!-- After the CCN Exam SYNTAX and Semantics might be preety clear to all of you syntax and semantics (PTSD)
+	So we have Completed Syntax tags of the HTML
+	now we move towards 
+	SEMANTIC TAGS -->
+The Semantic Tags present in HTML5 are:
+Header,footer,aside,mian,article,nav,section,details
